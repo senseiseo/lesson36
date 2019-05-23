@@ -2,8 +2,13 @@ class ContactsController < ApplicationController
     def index 
     end 
 
-    def create 
-        @contact = Contact.new(params[:contact])
+    def create
+        @contact = Contact.new(contact_params)
+        if @contact.valid?
+          @contact.save
+        else
+          render action: 'new'
+        end
     end
 
     private 
