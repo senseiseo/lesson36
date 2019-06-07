@@ -8,5 +8,11 @@ class Article < ApplicationRecord
         title 
     end
 
-end
+    def last_comment
+        comments.last
+      end
+    
+    
+    end
+
  

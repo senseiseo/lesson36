@@ -18,4 +18,16 @@ describe Article do
     
     end
     end 
+
+    describe Article do
+      describe "#last_comment" do
+        it "returns the last comment" do
+          # создаём статью с 3 комментариями
+          article = create(:article_with_comments)
+    
+          # проверка
+          expect(article.last_comment.body).to eq "Comment body 3"
+        end
+      end
+    end
 end
