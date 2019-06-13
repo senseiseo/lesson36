@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-
+ gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'capybara'
@@ -62,7 +62,7 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  
+   gem 'database_cleaner'
   gem 'chromedriver-helper'
 end
 
