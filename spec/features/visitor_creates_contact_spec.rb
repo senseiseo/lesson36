@@ -13,7 +13,7 @@ feature "Contact creation" do
     fill_in :contact_message, with: 'Foo Bar Baz'
 
     click_button 'Send message'
-    #expect(page).to have_content 'Thanks!'
+    expect(page).to have_content 'Thanks!'
   end
 
 end
